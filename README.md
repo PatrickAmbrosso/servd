@@ -1,8 +1,12 @@
 # servd - Lightweight, Cross-Platform Service Manager
 
+> NOTE: This project is currently in development and is not yet ready for use (like NOT at all).
+
 ![GitHub Release](https://img.shields.io/github/v/release/PatrickAmbrosso/servd?color=blue)
 ![License](https://img.shields.io/github/license/PatrickAmbrosso/servd)
 ![Build](https://img.shields.io/github/actions/workflow/status/PatrickAmbrosso/servd/release.yml?label=build)
+![Platforms](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-green)
+![Go Version](https://img.shields.io/github/go-mod/go-version/PatrickAmbrosso/servd)
 
 ## Overview
 `servd` is a lightweight **cross-platform service manager** that allows you to **install, manage, monitor, and control services** on Linux, macOS, and Windows.
