@@ -3,7 +3,9 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"runtime"
 
+	"github.com/PatrickAmbrosso/servd/env"
 	"github.com/spf13/cobra"
 )
 
@@ -17,6 +19,14 @@ var rootCmd = &cobra.Command{
 	Short: "servd is a lightweight service manager",
 	Long:  banner,
 	Run: func(cmd *cobra.Command, args []string) {
+
+		// handlers, err := env.GetPlatformHandlers()
+		// if err != nil {
+		// 	fmt.Println("Error:", err)
+		// 	os.Exit(1)
+		// }
+
+		fmt.Printf("Currently in the OS %s and with admin status being %t\n", runtime.GOOS, env.IsAdmin())
 
 		if version, _ := cmd.Flags().GetBool("version"); version {
 			fmt.Println("servd version 0.0.1")
